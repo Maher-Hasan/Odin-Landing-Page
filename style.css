@@ -8,9 +8,11 @@ body {
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex: auto;
+    padding-left: 10%;
+    padding-right: 18%;
 }
 
 .logo {
@@ -69,6 +71,7 @@ a {
 .hero2 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .hero2 p {
