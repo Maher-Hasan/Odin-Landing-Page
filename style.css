@@ -1,18 +1,15 @@
 body {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
     margin: 0px;
+    /*Keeps the content fit to the sides of the screen*/
 }
 
 .header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex: auto;
-    padding-left: 10%;
-    padding-right: 18%;
+    flex-direction: row; /* To separate the header elements horizontally */
+    justify-content: space-between; /* To locate elements at the end and start of the flex */
+    align-items: center; /* to align the elements in the center vertically */
+    padding-left: 10%; 
+    padding-right: 18%; /* padding from left and right */
 }
 
 .logo {
@@ -21,13 +18,13 @@ body {
 }
 
 ul {
-    list-style: none;
+    list-style: none; /* Remove dots from the list*/
     display: flex;
-    gap: 16px;
+    gap: 16px;  /* Set a space between elements of the ul */
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; /* remove underline from the links elements */
     color: #E5E7EB;
     font-size: 18px;
 }
@@ -43,8 +40,8 @@ a {
     padding: 10% ;
     display: flex;
     flex-direction: column;
-    flex-basis: 22%;
-    flex-shrink: 0;
+    flex-basis: 22%; /* set the content minimum size */
+    flex-shrink: 0; /* set the content element to not shrink more than the min width it's given */
     height: 250px;
 }
 
@@ -65,7 +62,7 @@ a {
     font-weight: bold;
     font-size: 16px;
     border: 0;
-    cursor: pointer;
+    cursor: pointer; /* change cursor to pointer when hovering over the button*/
 }
 
 .hero2 {
@@ -91,13 +88,21 @@ a {
     flex-direction: row;
     flex: 1;
     gap: 20px;
+    min-width: 800px;
 }
 
+@media (max-width: 800px) {
+    .your-element {
+      width: 100%; /* Set width to 100% for smaller screens */
+    }
+  }
+  
 .box {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 15px;
+    cursor: pointer;
 }
 
 .box div {
